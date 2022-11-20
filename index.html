@@ -166,5 +166,64 @@ const getValue = (a) => {
               
             }
     </pre>
+    <br>
+    <hr>
+    <h3>Second Smallest</h3>
+    <p>You are given 3 distinct integers X, Y, and Z,and your task is to find and return the second smallest integer among the three provided integers.
+      
+      <b>Note:</b> You have to complete findSndSmallest function. No need to take any input.</p>
+      <pre>
+        const findSndSmallest = (x,y,z) => {
+          if(x>y && y>z){
+            return y;
+          }
+          else if(x>z && z>y){
+            return z;
+          }
+          else if(y>x && x>z){
+            return x;
+          }
+          else if(y>z && z>x){
+            return z;
+          }
+          else if(z>x && x>y){
+            return x;
+          }
+          else if(z>y && y>x){
+            return y;
+          }
+       };
+      </pre>
+      <br>
+      <hr>
+      <h3>Find Grades</h3>
+      <p>Your school has the following grading system based upon the marks(M) obtained by a student:
+
+        If  M≤10, the grade will be E.
+        If 11≥M≤20, the grade will be D.
+        If 21≥ M≤30, the grade will be C.
+        If 31≥M≤40, the grade will be B.
+        If 41≥M≤50, the grade will be A.
+        Your friend will enter his marks out of  50, and your task is to print his grades using a switch statement.
+        
+       <b> Note:</b> You have to complete findGrades function. No need to take any input.</p>
+       <pre>
+        const findGrades = (a) => {
+        };    if(a<=10){
+              return "E"
+            }
+            else if(a>=11 && a<=20){
+              return "D"
+            }
+            else if(a>=21 && a<=30){
+              return "C"
+            }
+            else if(a>=31 && a<=40){
+            return "B"
+        }
+        else if(a>=41 && a<=50){
+          return "A"
+        }
+       </pre>
 </body>
 </html>
